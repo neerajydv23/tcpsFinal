@@ -120,108 +120,129 @@
                 <div class="w-full bg-[#fff] py-3 px-6 text-[18px] font-semibold mt-4">
                     <h1>All Admission Query</h1>
                 </div>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Name</th>
-                            <th>Email</th>
-                            <th>Mobile Number</th>
-                            <th>State</th>
-                            <th>City</th>
-                            <th>Course</th>
-                            <!-- Add more headers as needed -->
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <!-- Replace with actual data -->
-                        <%admission.forEach(function(elem){%>
+                <div class="overflow-x-auto">
+                    <table class="w-full">
+                        <thead>
                             <tr>
-                                <td><%=elem.studentName%></td>
-                                <td><%=elem.studentEmail%></td>
-                                <td><%=elem.studentNumber%></td>
-                                <td><%=elem.state%></td>
-                                <td><%=elem.city%></td>
-                                <td><%=elem.courseName%></td>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Mobile Number</th>
+                                <th>State</th>
+                                <th>City</th>
+                                <th>Course</th>
                             </tr>
-                        <%})%>
-                        
-                        <!-- Add more rows as needed -->
-                    </tbody>
-                </table>
+                        </thead>
+                        <tbody>
+                            <%admission.forEach(function(elem){%>
+                                <tr>
+                                    <td>
+                                        <%=elem.studentName%>
+                                    </td>
+                                    <td>
+                                        <%=elem.studentEmail%>
+                                    </td>
+                                    <td>
+                                        <%=elem.studentNumber%>
+                                    </td>
+                                    <td>
+                                        <%=elem.state%>
+                                    </td>
+                                    <td>
+                                        <%=elem.city%>
+                                    </td>
+                                    <td>
+                                        <%=elem.courseName%>
+                                    </td>
+                                </tr>
+                                <%})%>
+                        </tbody>
+                    </table>
+                </div>
+
                 <!-- addmission query end -->
 
                 <!--contact query  -->
                 <div class="w-full bg-[#fff] py-3 px-6 text-[18px] font-semibold mt-4">
                     <h1>All Message Query</h1>
                 </div>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Name</th>
-                            <th>Email</th>
-                            <th>Subject</th>
-                            <th>Message</th>
-                            <!-- Add more headers as needed -->
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <!-- Replace with actual data -->
-                        <%contact.forEach(function(elem){%>
+                <div class="overflow-x-auto">
+                    <table class="w-full">
+                        <thead>
                             <tr>
-                                <td><%=elem.cName%></td>
-                                <td><%=elem.cEmail%></td>
-                                <td><%=elem.subject%></td>
-                                <td><%=elem.message%></td>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Subject</th>
+                                <th>Message</th>
                             </tr>
-                        <%})%>
-                        
-                        <!-- Add more rows as needed -->
-                    </tbody>
-                </table>
+                        </thead>
+                        <tbody>
+                            <%contact.forEach(function(elem){%>
+                                <tr>
+                                    <td>
+                                        <%=elem.cName%>
+                                    </td>
+                                    <td>
+                                        <%=elem.cEmail%>
+                                    </td>
+                                    <td>
+                                        <%=elem.subject%>
+                                    </td>
+                                    <td>
+                                        <%=elem.message%>
+                                    </td>
+                                </tr>
+                                <%})%>
+                        </tbody>
+                    </table>
+                </div>
+
                 <!--contact query  -->
                 <!-- all users table -->
                 <div class="w-full bg-[#fff] py-3 px-6 text-[18px] font-semibold mt-4">
                     <h1>All Enrolled Students</h1>
                 </div>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>S.No</th>
-                            <th>Name</th>
-                            <th>Date of Admit</th>
-                            <!-- Add more headers as needed -->
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <!-- Replace with actual data -->
-                        <tr>
-                            <td>1</td>
-                            <td>Harvey Specter</td>
-                            <td>2022-01-01</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>Emily Doe</td>
-                            <td>2022-01-02</td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>Chloe sans</td>
-                            <td>2022-01-02</td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>Gabriel lee</td>
-                            <td>2022-01-02</td>
-                        </tr>
-                        <tr>
-                            <td>5</td>
-                            <td>bret pet</td>
-                            <td>2022-01-02</td>
-                        </tr>
-                        <!-- Add more rows as needed -->
-                    </tbody>
-                </table>
+                <div class="overflow-x-auto">
+                    <table class="w-full">
+                        <thead>
+                            <tr>
+                                <th>S.No</th>
+                                <th>Name</th>
+                                <th>Date of Admit</th>
+                                <!-- Add more headers as needed -->
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Replace with actual data -->
+                            <tr>
+                                <td>1</td>
+                                <td>Harvey Specter</td>
+                                <td>2022-01-01</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Emily Doe</td>
+                                <td>2022-01-02</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Chloe sans</td>
+                                <td>2022-01-02</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Gabriel lee</td>
+                                <td>2022-01-02</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>bret pet</td>
+                                <td>2022-01-02</td>
+                            </tr>
+                            <!-- Add more rows as needed -->
+                        </tbody>
+                    </table>
+                </div>
+
                 <!-- all users table -->
             </div>
         </div>
