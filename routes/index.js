@@ -288,6 +288,10 @@ router.post('/login', async function (req, res, next) {
   };
 
 });
+
+router.get('/admissiondetails', function(req,res){
+  res.render("admissionform")
+});
   
 router.get('/register', function (req, res, next) {
   res.render('register', { error: req.flash('error') });
