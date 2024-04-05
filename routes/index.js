@@ -205,8 +205,8 @@ router.get('/editEvent/:id', isLoggedIn, async function (req, res, next) {
 router.post('/editEvent/:id', isLoggedIn, async function (req, res, next) {
   try {
     const event = await eventModel.findByIdAndUpdate(req.params.id, {
-      eventeName: req.body.eventeName,
-      eventeDescription: req.body.eventeDescription,
+      eventName: req.body.eventName,
+      eventDescription: req.body.eventDescription,
      
     }, { new: true });
     await event.save();
